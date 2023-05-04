@@ -1,12 +1,12 @@
 <template>
   <el-container>
-    <el-header>
-      <slot name="header"></slot>
-    </el-header>
+    <el-aside>
+      <slot name="aside"></slot>
+    </el-aside>
     <el-container>
-      <el-aside>
-        <slot name="aside"></slot>
-      </el-aside>
+      <el-header>
+        <slot name="header"></slot>
+      </el-header>
       <el-main>
         <slot name="main"></slot>
       </el-main>
@@ -23,5 +23,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.el-aside {
+  width: 370px !important;
+  height: 100vh;
+}
 </style>

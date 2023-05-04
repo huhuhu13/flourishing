@@ -1,12 +1,11 @@
 import request from "@/utils/request.js";
-import qs from "qs";
  
  
 //登录
-export function Login(params) {
+export function Login(data) {
   return request({
-    url: "/auth/login",
+    url: "/api/common/login",
     method: "post",
-    params: params
+    data: data
   });
 }
